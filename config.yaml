@@ -17,11 +17,6 @@ dynamicRedirects:
     from: /path/
     to: /blue/
     status: 200
-  # invalid status code
-  -
-    from: /path/*
-    to: /blue/:splat
-    status: 501
 staticRedirects:
   # This is a custom redirect because the status code is 3xx.
   -
