@@ -17,6 +17,11 @@ dynamicRedirects:
     from: /path
     to: /blue
     status: 200
+  # placeholder
+  -
+    from: /color/:color
+    to: /:color
+    status: 301
 staticRedirects:
   # This is a custom redirect because the status code is 3xx.
   -
