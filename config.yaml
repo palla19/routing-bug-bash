@@ -28,6 +28,11 @@ staticRedirects:
     from: /grey-redirect
     to: /gray
     status: 308
+  # dynamic in static section
+  -
+    from: /wrong/*
+    to: /path/:splat
+    status: 200
 # adds authentication to your site. Commented out as a policy with the name auth02 must exist
 # authentication:
 #   policyName: auth02
