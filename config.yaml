@@ -11,13 +11,23 @@ dynamicRedirects:
   -
     from: /grey/*
     to: /gray/:splat
-    statusCode: 200
-  # This is a custom redirect because the status code is 3xx.
+    status: 200
+  # this should not be here, should be static
+  -
+    from: /path/
+    to: /blue/
+    status: 200
+  # invalid status code
+  -
+    from: /path/*
+    to: /blue/:splat
+    status: 501
 staticRedirects:
+  # This is a custom redirect because the status code is 3xx.
   -
     from: /grey-redirect
     to: /gray
-    statusCode: 308
+    status: 308
 # adds authentication to your site. Commented out as a policy with the name auth02 must exist
 # authentication:
 #   policyName: auth02
