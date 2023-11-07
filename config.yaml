@@ -14,8 +14,8 @@ dynamicRedirects:
     status: 200
   # this should not be here, should be static
   -
-    from: /path/
-    to: /blue/
+    from: /path
+    to: /blue
     status: 200
 staticRedirects:
   # This is a custom redirect because the status code is 3xx.
