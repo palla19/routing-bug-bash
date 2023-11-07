@@ -32,7 +32,7 @@ staticRedirects:
   -
     from: /wrong/*
     to: /path/:splat
-    status: 200
+    status: 301
 # adds authentication to your site. Commented out as a policy with the name auth02 must exist
 # authentication:
 #   policyName: auth02
